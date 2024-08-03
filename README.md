@@ -1,12 +1,12 @@
-# Chinese LLAMA 3.1-8B-Instruct Model with Fine-tuning and DPO
+# llama-3.1-8b-chinese-instruct with SFT and DPO
 
 ## 项目简介
 
-LLAMA 3.1-8B-Instruct 模型，以其庞大的参数规模、强大的上下文理解能力和灵活的指令遵循能力，在全球范围内赢得了广泛的关注与赞誉。该模型在多种自然语言处理任务上展现出卓越的性能，包括但不限于文本生成、问答系统、文本摘要等，为人工智能领域的研究与应用提供了强大的技术支持。
+LLAMA-3.1-8B-Instruct 模型，以其庞大的参数规模、强大的上下文理解能力和灵活的指令遵循能力，在全球范围内赢得了广泛的关注与赞誉。该模型在多种自然语言处理任务上展现出卓越的性能，包括但不限于文本生成、问答系统、文本摘要等，为人工智能领域的研究与应用提供了强大的技术支持。
 
-然而，尽管LLAMA 3.1-8B-Instruct模型在多种语言环境下均表现出色，但在中文这一特定语境下，其性能却存在一定的局限性。为了弥补这一不足，本项目旨在通过针对中文语境的深入优化，提升LLAMA 3.1-8B-Instruct模型在中文处理上的能力。
+然而，尽管LLAMA-3.1-8B-Instruct模型在多种语言环境下均表现出色，但在中文这一特定语境下，其性能却存在一定的局限性。为了弥补这一不足，本项目旨在通过针对中文语境的深入优化，提升LLAMA 3.1-8B-Instruct模型在中文处理上的能力。
 
-本项目基于llama3.1-8b-instruct模型，在llama-factory的框架下，使用近30w条中文数据进行微调（Fine-tuning），并尝试应用了动态提示优化（Dynamic Prompt Optimization, DPO）技术，旨在提升模型在中文语境下的理解和生成能力。
+本项目基于llama-3.1-8b-instruct模型，在llama-factory的框架下，使用近30w条中文数据进行微调（Fine-tuning），并尝试应用了动态提示优化（Dynamic Prompt Optimization, DPO）技术，旨在提升模型在中文语境下的理解和生成能力。
 
 
 
@@ -53,22 +53,22 @@ CMMLU是一个综合性的中文评估基准，专门用于评估语言模型在
 
 ## 数据集
 
-微调：
+微调数据集：
 
-| 中文微调数据集        | llama3 ShareGPT格式中文微调数据集                            | https://modelscope.cn/datasets/zhuangxialie/Llama3-Chinese-Dataset/files |
-| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| train_1M_CN           | 源自BelleGroup的一部分SFT数据。包含约100万条由BELLE项目生成的中文指令数据。 | https://huggingface.co/datasets/BelleGroup/train_1M_CN       |
-| chinese_modern_poetry | 数据集包括了近现代的中国诗人及外国诗人（中译版）作品         | https://huggingface.co/datasets/Iess/chinese_modern_poetry   |
-| code                  | 数据集包含问题描述和Python语言代码                           | https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca |
-| mathglm               | 清华大学算术任务数据集                                       | https://cloud.tsinghua.edu.cn/d/8d9ee3e52bb54afd9c16/        |
+| 中文微调数据集        | https://modelscope.cn/datasets/zhuangxialie/Llama3-Chinese-Dataset/files |
+| --------------------- | ------------------------------------------------------------ |
+| train_1M_CN           | https://huggingface.co/datasets/BelleGroup/train_1M_CN       |
+| chinese_modern_poetry | https://huggingface.co/datasets/Iess/chinese_modern_poetry   |
+| code                  | https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca |
+| mathglm               | https://cloud.tsinghua.edu.cn/d/8d9ee3e52bb54afd9c16/        |
 
 dpo数据集：
 
-| [DPO-En-Zh-20k](https://huggingface.co/datasets/hiyouga/DPO-En-Zh-20k) | https://huggingface.co/datasets/hiyouga/DPO-En-Zh-20k      |
-| ------------------------------------------------------------ | ---------------------------------------------------------- |
-| [orca_dpo_pairs](https://huggingface.co/datasets/Intel/orca_dpo_pairs) | https://huggingface.co/datasets/Intel/orca_dpo_pairs       |
-| [Chinese-dpo-pairs](https://huggingface.co/datasets/wenbopan/Chinese-dpo-pairs) | https://huggingface.co/datasets/wenbopan/Chinese-dpo-pairs |
-| DPO-zh-en-emoji                                              | https://huggingface.co/datasets/shareAI/DPO-zh-en-emoji    |
+| DPO-En-Zh-20k     | https://huggingface.co/datasets/hiyouga/DPO-En-Zh-20k      |
+| ----------------- | ---------------------------------------------------------- |
+| orca_dpo_pairs    | https://huggingface.co/datasets/Intel/orca_dpo_pairs       |
+| Chinese-dpo-pairs | https://huggingface.co/datasets/wenbopan/Chinese-dpo-pairs |
+| DPO-zh-en-emoji   | https://huggingface.co/datasets/shareAI/DPO-zh-en-emoji    |
 
  
 
