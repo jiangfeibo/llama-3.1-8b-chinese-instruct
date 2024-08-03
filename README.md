@@ -36,16 +36,18 @@ cd llama-3.1-8b-it-ch-dpo
 
 C-Eval 是一个全面的中文基础模型评估套件。它包含了大量的多项选择题，涵盖了人文、社科、理工以及其他专业四个大方向，包括52个不同的学科和四个难度级别。
 
-| **ceval** | Average | Average(hard) | STEM | Social Sciences | Humanities | Other |
-| 原模型    | 25.2    | 23.6          | 25   | 26.5            | 25.1       | 24.3  |
-| 训练后    | 44.0    | 32.5          | 41.6 | 51.9            | 41.1       | 44.0  |
+| C-Eval | Average | Average(hard) | STEM | Social Sciences | Humanities | Other |
+| ------ | ------- | ------------- | ---- | --------------- | ---------- | ----- |
+| 原模型 | 25.2    | 23.6          | 25   | 26.5            | 25.1       | 24.3  |
+| 训练后 | 44.0    | 32.5          | 41.6 | 51.9            | 41.1       | 44.0  |
 
 #### Cmmlu
 CMMLU是一个综合性的中文评估基准，专门用于评估语言模型在中文语境下的知识和推理能力。CMMLU涵盖了从基础学科到高级专业水平的67个主题。它包括：需要计算和推理的自然科学，需要知识的人文科学和社会科学,以及需要生活常识的中国驾驶规则等。
 
-| **cmmlu** | Average | STEM  | Social Sciences | Humanities | Other |
-| 原模型    | 24.99   | 26.04 | 24.84           | 25.23      | 24.05 |
-| 训练后    | 44.63   | 37.5  | 45.21           | 45.76      | 49.14 |
+| CMMLU  | Average | STEM  | Social Sciences | Humanities | Other |
+| ------ | ------- | ----- | --------------- | ---------- | ----- |
+| 原模型 | 24.99   | 26.04 | 24.84           | 25.23      | 24.05 |
+| 训练后 | 44.63   | 37.5  | 45.21           | 45.76      | 49.14 |
 
  
 
@@ -53,6 +55,8 @@ CMMLU是一个综合性的中文评估基准，专门用于评估语言模型在
 
 微调数据集：
 
+|                       |                                                              |
+| --------------------- | ------------------------------------------------------------ |
 | 中文微调数据集        | https://modelscope.cn/datasets/zhuangxialie/Llama3-Chinese-Dataset/files |
 | train_1M_CN           | https://huggingface.co/datasets/BelleGroup/train_1M_CN       |
 | chinese_modern_poetry | https://huggingface.co/datasets/Iess/chinese_modern_poetry   |
@@ -61,6 +65,8 @@ CMMLU是一个综合性的中文评估基准，专门用于评估语言模型在
 
 dpo数据集：
 
+|                   |                                                            |
+| ----------------- | ---------------------------------------------------------- |
 | DPO-En-Zh-20k     | https://huggingface.co/datasets/hiyouga/DPO-En-Zh-20k      |
 | orca_dpo_pairs    | https://huggingface.co/datasets/Intel/orca_dpo_pairs       |
 | Chinese-dpo-pairs | https://huggingface.co/datasets/wenbopan/Chinese-dpo-pairs |
