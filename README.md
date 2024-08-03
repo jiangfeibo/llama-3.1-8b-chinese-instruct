@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-"# demo" fffffffffffffffffff
-=======
 # Chinese LLAMA 3.1-8B-Instruct Model with Fine-tuning and DPO
 
 ## 项目简介
@@ -92,5 +89,5 @@ Training rewards:
 
  
 
- 
+
 >>>>>>> 1aa7373 (first commit)
