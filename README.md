@@ -22,7 +22,7 @@ DPO训练：采用动态提示优化技术，进一步优化模型在特定任�
 
 ## 安装与加载
 
-克隆本项目到本地：https://huggingface.co/jiangfeibo/llama-3.1-chinese-8b-it-dpo
+克隆本项目到本地：https://huggingface.co/jiangfb/llama-3.1-chinese-8b-it-dpo
 
 git clone 
 
