@@ -86,6 +86,9 @@ Training loss:
 
 ![img](README.assets/clip_image006.gif)
 
-Training rewards:
+Training rewards:  
 
 ![img](README.assets/clip_image008.gif)
+
+
+
