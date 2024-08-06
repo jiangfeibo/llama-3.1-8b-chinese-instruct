@@ -78,7 +78,7 @@ Sft图像：
 
 ![img](README.assets/clip_image002.gif)
 
-![image-20240806221542915](README.assets/clip_image004.png)
+![image-20240806221542915](README.assets/clip_image004.gif)
 
 Dpo：
 
