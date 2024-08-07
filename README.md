@@ -6,7 +6,7 @@ LLAMA-3.1-8B-Instruct 模型，以其庞大的参数规模、强大的上下文�
 
 然而，尽管LLAMA-3.1-8B-Instruct模型在多种语言环境下均表现出色，但在中文这一特定语境下，其性能却存在一定的局限性。为了弥补这一不足，本项目旨在通过针对中文语境的深入优化，旨在提升LLAMA 3.1-8B-Instruct模型在中文处理上的能力。
 
-本项目基于llama-3.1-8b-instruct模型，与当前相关工作不同的是，我们采用了指令微调（Instruction Fine-tuning）和直接偏好对齐（Direct Preference Optimization, DPO）二阶段的学习方法，使用近30w条中文数据进行有监督指令微调，让后应用5000条数据进行直接偏好对齐，旨在进一步提升模型在中文语境下的理解和生成能力。在两个权威的中文评测基准下，C-Eval提升了83.34%的性能，CMMLU提升了83.95%的性能。
+本项目基于llama-3.1-8b-instruct模型，与当前相关工作不同的是，我们采用了指令微调（Instruction Fine-tuning）和直接偏好对齐（Direct Preference Optimization, DPO）二阶段的学习方法，使用近30w条中文数据进行有监督指令微调，然后应用5000条对齐指令进行直接偏好对齐，旨在进一步提升模型在中文语境下的理解和生成能力。在两个权威的中文评测基准下，C-Eval提升了83.34%的性能，CMMLU提升了83.95%的性能。
 
 
 #### 模型特点
@@ -73,18 +73,3 @@ DPO数据集：
 
  
 
-SFT图像：
-
-![img](README.assets/clip_image002.gif)
-
-![image-20240806221542915](README.assets/clip_image004.gif)
-
-Dpo：
-
-Training loss:
-
-![img](README.assets/clip_image006.gif)
-
-Training rewards:  
-
-![img](README.assets/clip_image008.gif)
