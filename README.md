@@ -1,7 +1,7 @@
 # llama-3.1-8b-chinese-instruct with SFT and DPO
 
 <div align="center">
-  <img src="https://github.com/******/dbscan_clustering_algorithm/blob/master/data/DBSCAN.png",width="300px">>
+  <img src="https://github.com/jiangfeibo/llama-3.1-8b-chinese-instruct/blob/main/README.assets/llama3.jpg",width="300px">>
 </div>
 
 ## 项目简介
