@@ -1,7 +1,7 @@
 # llama-3.1-8b-chinese-instruct with SFT and DPO
 
 <div align="center">
-  <img src="https://github.com/jiangfeibo/llama-3.1-8b-chinese-instruct/blob/main/README.assets/llama3.jpg" width="200px">
+  <img src="https://github.com/jiangfeibo/llama-3.1-8b-chinese-instruct/blob/main/README.assets/llama3.jpg" width="500px">
 </div>
 
 ## 项目简介
